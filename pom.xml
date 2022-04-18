@@ -9,6 +9,7 @@
     
     <modules>
         <module>modules/annotations</module>
+        <module>modules/tools</module>
     </modules>
     
     <properties>
