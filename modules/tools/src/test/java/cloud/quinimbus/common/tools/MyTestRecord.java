@@ -1,5 +1,3 @@
 package cloud.quinimbus.common.tools;
 
-public record MyTestRecord(String strField) {
-    
-}
+public record MyTestRecord(String strField) {}

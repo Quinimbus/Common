@@ -18,8 +18,12 @@ public class Records {
         return r -> {
             try {
                 return (V) recordClass.getMethod(field).invoke(r);
-            } catch (NoSuchMethodException | SecurityException | IllegalAccessException | InvocationTargetException ex) {
-                throw new IllegalArgumentException("Cannot read field %s on record of type %s".formatted(field, recordClass.getName()), ex);
+            } catch (NoSuchMethodException
+                    | SecurityException
+                    | IllegalAccessException
+                    | InvocationTargetException ex) {
+                throw new IllegalArgumentException(
+                        "Cannot read field %s on record of type %s".formatted(field, recordClass.getName()), ex);
             }
         };
     }
