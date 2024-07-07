@@ -6,6 +6,13 @@ import java.util.function.Function;
 
 public class Records {
 
+    public static String idFromClass(Class<?> recordClass) {
+        if (!Record.class.isAssignableFrom(recordClass)) {
+            throw new IllegalArgumentException("%s is not a record class".formatted(recordClass.getSimpleName()));
+        }
+        return idFromClassName(recordClass.getSimpleName());
+    }
+
     public static String idFromRecordClass(Class<? extends Record> recordClass) {
         return idFromClassName(recordClass.getSimpleName());
     }
