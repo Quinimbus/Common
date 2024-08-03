@@ -13,5 +13,5 @@ public @interface Provider {
 
     String[] alias();
 
-    int priority();
+    int priority() default 0;
 }
