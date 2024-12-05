@@ -11,4 +11,11 @@ public class IDsTest {
         assertEquals("persons", IDs.toPlural("person"));
         assertEquals("entries", IDs.toPlural("entry"));
     }
+
+    @Test
+    public void testToSingular() {
+        assertEquals("person", IDs.toSingular("persons"));
+        assertEquals("entry", IDs.toSingular("entries"));
+        assertEquals("list", IDs.toSingular("list"));
+    }
 }

@@ -9,4 +9,14 @@ public class IDs {
             return id.concat("s");
         }
     }
+
+    public static String toSingular(String id) {
+        if (id.endsWith("ies")) {
+            return id.substring(0, id.length() - 3).concat("y");
+        }
+        if (id.endsWith("s")) {
+            return id.substring(0, id.length() - 1);
+        }
+        return id;
+    }
 }
