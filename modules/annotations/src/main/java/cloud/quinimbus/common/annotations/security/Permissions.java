@@ -13,7 +13,7 @@ public @interface Permissions {
 
     String[] roles() default {};
 
-    public enum Type {
+    enum Type {
         ANONYMOUS,
         AUTHENTICATED,
         ROLES
