@@ -1,8 +1,8 @@
 package cloud.quinimbus.common.tools;
 
+import cloud.quinimbus.common.annotations.Provider;
 import cloud.quinimbus.tools.function.LazySingletonSupplier;
 import cloud.quinimbus.tools.lang.TypeRef;
-import cloud.quinimbus.common.annotations.Provider;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;

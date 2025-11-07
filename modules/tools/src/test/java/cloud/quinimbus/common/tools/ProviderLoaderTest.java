@@ -1,15 +1,16 @@
 package cloud.quinimbus.common.tools;
 
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
 import cloud.quinimbus.common.annotations.Provider;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ServiceLoader;
 import java.util.stream.Stream;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.MockedStatic;
-import static org.mockito.Mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
